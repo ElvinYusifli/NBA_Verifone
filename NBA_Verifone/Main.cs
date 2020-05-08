@@ -63,18 +63,18 @@ namespace test
             stream = client.GetStream();
             label3.Text = "Status: Connected " + device.DeviceName;
 
-            var AvilableDevices = client.DiscoverDevices();
-            foreach (var item in AvilableDevices)
-            {
-                listBox1.Items.Add(item.DeviceName);
-            }
+            //var AvilableDevices = client.DiscoverDevices();
+            //foreach (var item in AvilableDevices)
+            //{
+            //    listBox1.Items.Add(item.DeviceName);
+            //}
 
 
-            var PairDevices = client.PairedDevices;
-            foreach (var item in PairDevices)
-            {
-                listBox2.Items.Add(item.DeviceName);
-            }
+            //var PairDevices = client.PairedDevices;
+            //foreach (var item in PairDevices)
+            //{
+            //    listBox2.Items.Add(item.DeviceName);
+            //}
 
             btnConnect.Enabled = !client.Connected;
             btnDisconnect.Enabled = client.Connected;
