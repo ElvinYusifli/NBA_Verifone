@@ -70,6 +70,7 @@ namespace test
             //}
 
 
+
             //var PairDevices = client.PairedDevices;
             //foreach (var item in PairDevices)
             //{
